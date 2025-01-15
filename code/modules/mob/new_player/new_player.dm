@@ -209,11 +209,11 @@
 						  "Player Setup", "Yes", "No") == "No")
 				return 0
 		var/datum/preferences/records_check = client.prefs.get_records()
-		if(!records_check)
+	/*	if(!records_check)
 			if(alert(src,"Are you sure you wish to spawn without records? You will likely be arrested. \
 						If not, go to the Backround section of Setup Character and set Records.", \
 						"Player Setup", "Yes", "No") == "No")
-				return 0
+				return 0*/
 		if(!check_rights(R_ADMIN, 0))
 			var/datum/species/S = all_species[client.prefs.species]
 			if((S.spawn_flags & IS_WHITELISTED) && !is_alien_whitelisted(src, client.prefs.species))
