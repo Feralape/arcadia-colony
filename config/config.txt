@@ -81,7 +81,7 @@ LOG_RUNTIME
 ##LOG_ADMINWARN  ## Also duplicates a bunch of other messages.
 
 ## sql switching
-SQL_DISABLED
+#SQL_ENABLED
 
 ## disconnect players who did nothing during 10 minutes
 # KICK_INACTIVE
